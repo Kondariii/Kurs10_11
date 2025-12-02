@@ -22,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText name_input = findViewById(R.id.name_input);
                 String name_value = name_input.getText().toString();
                 EditText age_input = findViewById(R.id.Age_input);
-                String string_age = age_input.getText().toString();
-                int age = Integer.parseInt(string_age);
+                int age = Integer.parseInt(age_input.getText().toString());
                 intent.putExtra(NAME_KEY, name_value);
                 intent.putExtra(AGE_KEY, age);
                 startActivity(intent);
